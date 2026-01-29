@@ -1107,6 +1107,19 @@ img {
         font-size: 2.5rem;
     }
 
+    .hero-container {
+        text-align: center;
+    }
+
+    .hero-clinic-block {
+        align-items: center;
+        width: 100%;
+    }
+
+    .clinic-logo-img {
+        max-width: 260px;
+    }
+
     .hero-stats {
         flex-wrap: wrap;
         gap: 25px;
