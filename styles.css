@@ -121,10 +121,14 @@ img {
 }
 
 .logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(52%) saturate(497%) hue-rotate(127deg) brightness(93%) contrast(87%);
 }
 
 .nav-list {
@@ -964,12 +968,14 @@ img {
 }
 
 .footer-logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .footer-info p {
