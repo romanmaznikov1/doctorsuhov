@@ -401,6 +401,12 @@ img {
     border-radius: var(--radius);
 }
 
+.clinic-phones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .clinic-phone-btn {
     display: inline-flex;
     align-items: center;
