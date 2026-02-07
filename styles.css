@@ -727,6 +727,39 @@ img {
     color: white;
 }
 
+.associations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.association-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    border-left: 3px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.association-item:hover {
+    background: #e8f4f2;
+    transform: translateX(5px);
+}
+
+.association-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.association-name {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 .philosophy-content {
     display: flex;
     gap: 25px;
@@ -1200,6 +1233,33 @@ img {
     font-size: 0.95rem;
 }
 
+.footer-nav h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+    display: none;
+}
+
+.footer-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-nav-list a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.footer-nav-list a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
 .footer-social {
     display: flex;
     gap: 15px;
@@ -1542,6 +1602,10 @@ img {
         width: 100%;
     }
 
+    .clinic-phones {
+        justify-content: center;
+    }
+
     .clinic-logo-img {
         max-width: 260px;
     }
@@ -1620,6 +1684,15 @@ img {
         flex-direction: column;
         text-align: center;
         gap: 25px;
+    }
+
+    .footer-nav-list {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-nav-list a:hover {
+        transform: none;
     }
 
     .footer-bottom {
