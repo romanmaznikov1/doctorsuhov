@@ -160,6 +160,24 @@ const workData = [
         after: ['images/after7.jpg', 'images/after7_1.jpg'],
         title: 'Протезирование All-on-4',
         description: 'Полное восстановление зубного ряда на четырёх имплантах'
+    },
+    {
+        before: 'images/before8.jpg',
+        after: 'images/after8.png',
+        title: 'Протезирование коронками',
+        description: 'Восстановление зубов керамическими коронками'
+    },
+    {
+        before: 'images/before9.jpg',
+        after: 'images/after9.jpg',
+        title: 'Имплантация и коронки',
+        description: 'Комплексное восстановление с имплантами'
+    },
+    {
+        before: 'images/before10.jpg',
+        after: 'images/after10.jpg',
+        title: 'Протезирование на импланте',
+        description: 'Установка коронки на имплант'
     }
 ];
 
