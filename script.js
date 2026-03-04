@@ -162,8 +162,8 @@ const workData = [
         description: 'Полное восстановление зубного ряда на четырёх имплантах'
     },
     {
-        before: 'images/before8.jpg',
-        after: 'images/after8.png',
+        before: 'images/before8.png',
+        after: 'images/after8.jpg',
         title: 'Протезирование коронками',
         description: 'Восстановление зубов керамическими коронками'
     },
