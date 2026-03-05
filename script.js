@@ -170,14 +170,14 @@ const workData = [
     {
         before: 'images/before9.jpg',
         after: 'images/after9.jpg',
-        title: 'Имплантация и коронки',
-        description: 'Комплексное восстановление с имплантами'
+        title: 'Коронка на 13 зуб',
+        description: 'Восстановление и эстетическая реабилитация зуба 13'
     },
     {
         before: 'images/before10.jpg',
         after: 'images/after10.jpg',
-        title: 'Протезирование на импланте',
-        description: 'Установка коронки на имплант'
+        title: 'Имплантация all-on-6',
+        description: 'Полное восстановление зубного ряда на шести имплантах'
     }
 ];
 
