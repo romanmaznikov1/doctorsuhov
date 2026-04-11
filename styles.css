@@ -54,14 +54,12 @@ img {
 }
 
 /* ===== Shared Scrollbar ===== */
-.works-grid,
 .reviews-slider,
 .lightbox-content,
 .lightbox-after-container {
     scrollbar-width: thin;
 }
 
-.works-grid::-webkit-scrollbar,
 .reviews-slider::-webkit-scrollbar,
 .lightbox-content::-webkit-scrollbar {
     height: 8px;
@@ -75,7 +73,6 @@ img {
     width: 8px;
 }
 
-.works-grid::-webkit-scrollbar-track,
 .reviews-slider::-webkit-scrollbar-track {
     background: var(--bg-light);
     border-radius: 10px;
@@ -90,16 +87,11 @@ img {
     border-radius: 3px;
 }
 
-.works-grid::-webkit-scrollbar-thumb,
 .reviews-slider::-webkit-scrollbar-thumb,
 .lightbox-content::-webkit-scrollbar-thumb,
 .lightbox-after-container::-webkit-scrollbar-thumb {
     background: var(--primary-color);
     border-radius: 10px;
-}
-
-.works-grid::-webkit-scrollbar-thumb:hover {
-    background: #238073;
 }
 
 .reviews-slider::-webkit-scrollbar-thumb:hover {
@@ -433,14 +425,9 @@ img {
 }
 
 .works-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px;
-    scrollbar-color: var(--primary-color) var(--bg-light);
 }
 
 .work-card {
@@ -449,13 +436,30 @@ img {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    flex: 0 0 450px;
-    scroll-snap-align: start;
     cursor: pointer;
 }
 
-.work-card-special {
-    flex: 0 0 650px;
+.work-card.hidden {
+    display: none;
+}
+
+.show-more-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 40px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.show-more-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
 .work-card:hover {
@@ -1295,12 +1299,8 @@ img {
         max-width: 350px;
     }
 
-    .work-card {
-        flex: 0 0 380px;
-    }
-
-    .work-card-special {
-        flex: 0 0 550px;
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .review-card {
@@ -1323,6 +1323,10 @@ img {
 
     .nav {
         display: none;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
     }
 
     .burger {

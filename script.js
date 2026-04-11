@@ -223,10 +223,16 @@ initSliderNav({
     gapContainer: document.querySelector('.reviews-track'),
 });
 
-// Works slider
-initSliderNav({
-    slider: document.querySelector('.works-grid'),
-    wrapper: document.querySelector('.works .slider-wrapper'),
-    dotsContainer: document.querySelector('.works-dots'),
-    cardSelector: '.work-card',
-});
+// Works grid toggle
+function toggleWorks() {
+    const cards = document.querySelectorAll('.work-card');
+    const btn = document.querySelector('.show-more-btn');
+    const hidden = document.querySelectorAll('.work-card.hidden');
+    if (hidden.length) {
+        hidden.forEach(card => card.classList.remove('hidden'));
+        btn.textContent = 'Скрыть';
+    } else {
+        cards.forEach((card, i) => { if (i >= 6) card.classList.add('hidden'); });
+        btn.textContent = 'Показать ещё (' + (cards.length - 6) + ')';
+    }
+}
