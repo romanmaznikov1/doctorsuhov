@@ -91,6 +91,8 @@ const workData = [
     { before: 'images/before8.png', after: 'images/after8.jpg', title: 'Протезирование коронками', description: 'Восстановление зубов керамическими коронками' },
     { before: 'images/before9.jpg', after: 'images/after9.jpg', title: 'Коронка на 13 зуб', description: 'Восстановление и эстетическая реабилитация зуба 13' },
     { before: 'images/before10.jpg', after: 'images/after10.jpg', title: 'Имплантация all-on-6', description: 'Полное восстановление зубного ряда на шести имплантах' },
+    { before: 'images/before11.jpg', after: 'images/after11.jpg', title: 'Протезирование на импланте', description: 'Восстановление переднего зуба коронкой на импланте' },
+    { before: 'images/before12.jpg', after: 'images/after12.jpg', title: 'Протезирование на имплантах', description: 'Восстановление жевательного отдела' },
 ];
 
 let currentWorkIndex = 0;
